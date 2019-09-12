@@ -21,7 +21,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top nav-dscuny">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand">
           <img src="./assets/img/logodsc-flat.png" width="250" height="100%" class="d-inline-block align-top" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,18 +30,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item pr-5 active">
-                  <a class="nav-link" href="#">Overview <span class="sr-only">(current)</span></a>
+                  <a class="nav-link page-scroll" href="#overview">Overview <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item pr-5">
-                    <a class="nav-link" href="#">Event</a>
+                    <a class="nav-link page-scroll" href="#event">Event</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
+                    <a class="nav-link page-scroll" href="#faq">FAQ</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container">
+    <div id="home" class="container">
         <div class="jumbotron introduce-dscuny">
             <div class="display-4 dsc-img-wrapper">
                 <img class="img-fluid" src="./assets/img/logodsc-round.png" alt="DSC UNY">
@@ -54,13 +54,13 @@
                     web development skills, design thinking skills and <br>
                     leadership skills.
                 </div>
-                <a class="btn btn-dscuny btn-lg mt-5" href="#" role="button">
+                <a class="btn btn-dscuny btn-lg mt-5" href="#overview" role="button">
                     <span class="fa fa-lg fa-angle-down"></span><span class="pl-2">Scroll Down</span>
                 </a>
             </div>
         </div>
     </div>
-    <div class="ui container">
+    <div id="overview" class="ui container">
         <div class="ui three column grid">
             <div class="column">
                 <div class="ui fluid card">
@@ -116,7 +116,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div id="event" class="container">
         <div class="row">
  
             <div class="col-md-12 text-center mt-5">
@@ -209,6 +209,32 @@
                 } else {
                     nav.removeClass('bg-white');
                     nav.addClass('bg-trx');                
+                }
+            });
+
+            $('body').scrollspy({target: ".nav-dscuny", offset: 50});   
+
+            $("#navbarNav a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
+            $('.btn-dscuny').on('click', function (e){
+                if (this.hash !== "") {
+                    e.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
                 }
             });
 

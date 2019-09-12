@@ -90,6 +90,7 @@ body {
 
 .ui.fluid.card {
 	min-height: 260px !important;
+	box-shadow: 0 0 15px rgba(99, 114, 130, 0.3) !important;
 }
 
 .boxed-card {
