@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <filter id="Polygon_2" x="1419" y="116" width="1066" height="936" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.478"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Polygon_5" x="1073" y="-696" width="936" height="1066" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur-2"/>
+      <feFlood flood-opacity="0.478"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Polygon_3" x="1146" y="-182" width="1066" height="936" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur-3"/>
+      <feFlood flood-opacity="0.478"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Polygon_4" x="1468" y="-498" width="936" height="1066" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur-4"/>
+      <feFlood flood-opacity="0.478"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Web_1920_Landing_Page_2">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_Landing_Page_2" data-name="Web 1920 – Landing Page – 2" clip-path="url(#clip-Web_1920_Landing_Page_2)">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Polygon_2)">
+      <path id="Polygon_2-2" data-name="Polygon 2" d="M720.448,0a20,20,0,0,1,17.324,10.007l232.463,403a20,20,0,0,1,0,19.987l-232.463,403A20,20,0,0,1,720.448,846h-464.9a20,20,0,0,1-17.324-10.007l-232.463-403a20,20,0,0,1,0-19.987l232.463-403A20,20,0,0,1,255.552,0Z" transform="translate(1464 158)" fill="#e1382b"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Polygon_5)">
+      <path id="Polygon_5-2" data-name="Polygon 5" d="M720.448,0a20,20,0,0,1,17.324,10.007l232.463,403a20,20,0,0,1,0,19.987l-232.463,403A20,20,0,0,1,720.448,846h-464.9a20,20,0,0,1-17.324-10.007l-232.463-403a20,20,0,0,1,0-19.987l232.463-403A20,20,0,0,1,255.552,0Z" transform="translate(1964 -654) rotate(90)" fill="#557fc0"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Polygon_3)">
+      <path id="Polygon_3-2" data-name="Polygon 3" d="M720.448,0a20,20,0,0,1,17.324,10.007l232.463,403a20,20,0,0,1,0,19.987l-232.463,403A20,20,0,0,1,720.448,846h-464.9a20,20,0,0,1-17.324-10.007l-232.463-403a20,20,0,0,1,0-19.987l232.463-403A20,20,0,0,1,255.552,0Z" transform="translate(1191 -140)" fill="#189e59"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Polygon_4)">
+      <path id="Polygon_4-2" data-name="Polygon 4" d="M720.448,0a20,20,0,0,1,17.324,10.007l232.463,403a20,20,0,0,1,0,19.987l-232.463,403A20,20,0,0,1,720.448,846h-464.9a20,20,0,0,1-17.324-10.007l-232.463-403a20,20,0,0,1,0-19.987l232.463-403A20,20,0,0,1,255.552,0Z" transform="translate(2359 -456) rotate(90)" fill="#fbbc12"/>
+    </g>
+  </g>
+</svg>
