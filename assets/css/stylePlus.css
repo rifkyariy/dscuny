@@ -1,0 +1,118 @@
+/* Using Google Font */
+@import url(//https://fonts.googleapis.com/css?family=Product%20Sans);
+
+body {
+    font-family: 'Product Sans';    
+}
+
+/* Tech Section */
+.tech h1{
+    margin-top: 15%;
+}
+
+.tech-container {
+    padding: 5% 0;
+}
+
+.tech-item {
+    text-align: left !important;
+}
+
+
+/* Team Section */
+.background-section {
+    background-image: url("../img/back-gradient.svg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position:center 0px;
+    padding-top: 20%;
+    margin-top: -20%;
+}
+
+.dscteam {
+    color: white;
+    padding-bottom: 10%;
+}
+
+.misc-leader{
+    right: -15% !important;
+    margin-top: 5%;
+    position: inherit;
+    z-index: 1;
+}
+
+.dscteam h1 {
+    margin-top: 5%;
+}
+
+.dscteam h4, .tech h4 {
+    margin: 0;
+}
+
+.team {
+    padding: 5% 0;
+    color: black;
+}
+
+.quotes {
+    font-size: 1.2em;
+    padding: 8%;
+    border-radius: 50px 0 50px 0;
+}
+
+.quotes p {
+    line-height: 30px;  
+}
+
+
+/* Faq Section */
+
+.round-section{
+    border-radius: 80px 80px 0 0;
+    padding-top: 2%;
+    margin-top: -5%;
+    background-color: white;
+}
+
+.faq h1{
+    line-height: 80px;
+}
+
+.faq h3 {
+    line-height: 50px;
+    padding-top: 5%;
+}
+
+.faq p {
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+.faq .circular {
+    margin: 5% 0;
+    border-radius: 5%;
+}
+
+/* Footer Section */
+
+footer {
+    padding: 2% 0;
+}
+
+footer h2 {
+    padding-top: 2%;
+    font-family: 'Product Sans'
+}
+
+footer ul{
+    list-style: none;
+    padding-left: 0 !important;
+}
+
+footer ul li ,footer span{
+    line-height: 30px;
+}
+
+footer ul li a{
+    color: black;
+}

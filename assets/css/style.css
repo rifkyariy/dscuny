@@ -27,8 +27,16 @@ body {
 	background-color: transparent !important;
 }
 
+.bg-white {
+	box-shadow: 0 0 15px rgba(99, 114, 130, 0.3) !important;
+}
+
 .nav-dscuny {
 	padding: 15px;
+}
+
+.navbar-brand {
+    margin-left: 15%;
 }
 
 #navbarNav {
@@ -106,7 +114,7 @@ body {
     width: 50px;
 }
 
-.slick-slide {
+#event .slick-slide {
 	text-align: center;
 	min-height: 310px;
 }
@@ -117,3 +125,7 @@ body {
 	width: 60%;
 	background-color: #557FC0 !important;
 }
+
+#event h2 {
+    margin-top: 15%;
+} 
