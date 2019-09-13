@@ -18,37 +18,256 @@
     <script src="./assets/js/semantic.min.js"></script>
 
     <!-- SlickJS -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
     
+    <!-- Mailto -->
+    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
+
     <!-- Style -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/stylePlus.css">
 </head>
 <body>
-    <section></section>
-    <section></section>
-    <section >
-        <div class="container faq">
-            <div class="row">
-                <div class="col-lg-12 faq-con text-center">
-                    <h1>Frequently Asked Questions</h1>
-                    <div class="row text-left">
-                        <div class="col-lg-6">
-                            <h3>Who can become a member?</h3>
-                            <p>The club is open to any student, ranging from novice developers who are just starting, to advanced developers who want to further their skills.</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <h3>How frequently do events and workshops occur?</h3>
-                            <p>We have a hands-on session every month. We also hold workshops and showcases & we would recommend you to join our mailing list to get updates.</p>
+    <div id="overview" ></div>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top nav-dscuny">
+        <a class="navbar-brand">
+            <img src="./assets/img/logodsc-flat.png" width="250" height="100%" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item pr-5 active">
+                    <a class="nav-link page-scroll" href="#overview">Overview <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item pr-5">
+                    <a class="nav-link page-scroll" href="#event">Event</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#faq">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        
+    <section>
+        <div class="container">
+            <div class="jumbotron introduce-dscuny">
+                <div class="display-4 dsc-img-wrapper">
+                    <img class="img-fluid" src="./assets/img/logodsc-round.png" alt="DSC UNY">
+                </div>
+                <div class="dsc-introduce-text">
+                    <h3 class="student-club">Developer Student Club <strong>UNY.</strong></h3>
+                    <div class="nest-introduce">
+                        Developer Student Club is a Google Developers <br>
+                        program for university students to learn mobile and <br>
+                        web development skills, design thinking skills and <br>
+                        leadership skills.
+                    </div>
+                    <a class="btn btn-dscuny btn-lg mt-5" href="#event" role="button">
+                        <span class="fa fa-lg fa-angle-down"></span><span class="pl-2">Scroll Down</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="ui container">
+            <div class="ui three column grid">
+                <div class="column">
+                    <div class="ui fluid card">
+                        <div class="header-color green"></div>
+                        <div class="content">
+                            <div class="image boxed-card">
+                                <img class="center-box-img" src="./assets/img/icon-concept.svg">
+                            </div>
+                            <a class="header title-purpose">Concept of DSC</a>
+                            <div class="description">
+                                The DSC program is a grassroots
+                                channel through which Google
+                                provides development skills, mobile
+                                and web development skills for
+                                students, towards employability
+                            </div>
                         </div>
                     </div>
-
+                </div>
+                <div class="column">
+                    <div class="ui fluid card">
+                        <div class="header-color yellow"></div>
+                        <div class="content">
+                            <div class="image boxed-card">
+                                <img class="center-box-img" src="./assets/img/icon-question.svg">
+                            </div>
+                            <a class="header title-purpose">Why DSC?</a>
+                            <div class="description">
+                                For students to learn development
+                                skills, solve problems through technology
+                                and inspire them to be world class developers
+                                and changemakers
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui fluid card">
+                        <div class="header-color blue"></div>
+                        <div class="content">
+                            <div class="image boxed-card">
+                                <img class="center-box-img" src="./assets/img/icon-audien.svg">
+                            </div>
+                            <a class="header title-purpose">Target Audience</a>
+                            <div class="description">
+                                DSC activities are targeted at
+                                University students and any others including faculty
+                                members who want to learn development skills &
+                                work to solve real-life problems
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            
+    <section>
+            <div id="event" class="container">
                     <div class="row">
-                        <div class="col-lg-12 text-center ">
-                            <button class="ui primary button circular">Send us an email</button>
+                        <div class="col-md-12 text-center mt-5">
+                            <h2 style="font-weight:bolder"><strong>Events & Workshops</strong></h2>
+                            <h5 class="lead" style="margin-top:10px">Come learn, share and connect with us in person.</h5>
+                        </div>
+            
+                        <div class="col-md-12" style="margin-top:10rem">
+                            <div class="slide-class">
+                                <div>
+                                    <div class="row m-5">
+                                        <div class="col-md-4 text-left">
+                                            <h1>Upcoming Event</h1>
+                                            <h3>Stadium Generale</h3>
+                                            <div class="detail-event">
+                                                <span>Thursday, 13 September 2019</span>
+                                                <span>6 PM - 9 PM</span>
+                                                <span>Aula Student Center, 3rd Floor,</span>
+                                                <span>Universitas Negeri Yogyakarta</span>
+                                            </div>
+                                            <a href="#" class="btn btn-info btn-lg join-now">
+                                                <strong>Join now</strong>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <img class="img-fluid" src="./assets/img/icon-event.svg" alt="EVENT-UNY">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row m-5">
+                                        <div class="col-md-4 text-left">
+                                            <h1>Upcoming Event</h1>
+                                            <h3>Stadium Generale</h3>
+                                            <div class="detail-event">
+                                                <span>Thursday, 13 September 2019</span>
+                                                <span>6 PM - 9 PM</span>
+                                                <span>Aula Student Center, 3rd Floor,</span>
+                                                <span>Universitas Negeri Yogyakarta</span>
+                                            </div>
+                                            <a href="#" class="btn btn-info btn-lg join-now">
+                                                <strong>Join now</strong>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <img class="img-fluid" src="./assets/img/icon-event.svg" alt="EVENT-UNY">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row m-5">
+                                        <div class="col-md-4 text-left">
+                                            <h1>Upcoming Event</h1>
+                                            <h3>Stadium Generale</h3>
+                                            <div class="detail-event">
+                                                <span>Thursday, 13 September 2019</span>
+                                                <span>6 PM - 9 PM</span>
+                                                <span>Aula Student Center, 3rd Floor,</span>
+                                                <span>Universitas Negeri Yogyakarta</span>
+                                            </div>
+                                            <a href="#" class="btn btn-info btn-lg join-now">
+                                                <strong>Join now</strong>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <img class="img-fluid" src="./assets/img/icon-event.svg" alt="EVENT-UNY">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span id="leftArrow" class="left" style="top:50px;left:-11px;position:absolute;cursor:pointer;">
+                                <img class="img-fluid" src="./assets/img/left-arrow.svg" alt="LEFT">
+                            </span>
+                            <span id="rightArrow" class="float-right" style="top:50px;right:-11px;position:absolute;cursor:pointer;">
+                                <img src="./assets/img/right-arrow.svg" alt="RIGHT" class="img-fluid">
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+    </section>
+    
+    <section class="container tech">
+        <div class="row">
+            <div class="col-lg-12 tech-con text-center">
+                <h1>Technologies we're excited about</h1>
+                <h4>Opportunities to learn & access deep technical content.</h4>
+    
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class='tech-container'>
+                            <div class='tech-item text-left text-white'>
+                                <div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-10">
+                                            <div>
+                                                <img src="assets/img/android.svg" width="100%" alt="">
+                                                <h1>Android Development</h1>
+                                                <p>Every year Google developers release exciting new updates to the world's
+                                                    most popular operating system. We always have sessions to keep you
+                                                    updated and mastering the latest trends in modern Android development.
+                                                </p>
+                                                <button class="ui primary button circular">Get to Know</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-10">
+                                            <img src="assets/img/webdev.svg" width="100%" alt="">
+                                            <h1>Web Development</h1>
+                                            <p>Learn the core foundations of a delightful web experience both for the user
+                                                and developer. Stay up to tabs with emerging and trending technologies. Get
+                                                access to a guided, tutorial and hands-on coding experience. </p>
+                                            <button class="ui primary button circular">Get to Know</button>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-10">
+                                            <img src="assets/img/iot.svg" width="100%" alt="">
+                                            <h1>Internet of Things</h1>
+                                            <p>Learn more about working with Google's IoT platform, including Android
+                                                Things, Arduino, Smart Home, and Cloud IoT Core. Master the latest
+                                                technology of Internet of Things. Sounds Good?</p>
+                                            <button class="ui primary button circular">Get to Know</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -86,7 +305,7 @@
             </div>
         </div>
     </section>
-    <section class="round-section">
+    <section class="round-section" id="faq">
         <div class="container faq">
             <div class="row">
                 <div class="col-lg-12 faq-con text-center">
@@ -115,7 +334,7 @@
 
                     <div class="row">
                         <div class="col-lg-12 text-center ">
-                            <button class="ui primary button circular">Send us an email</button>
+                            <button  class="sendemail ui primary button circular">Send us an email</button>
                         </div>
                     </div>
                 </div>
@@ -137,7 +356,7 @@
                                         <div class="col-lg-4">
                                             <h2>Programs </h2>
                                             <ul>
-                                                <li><a href="">Tim TI INFINITE</a></li>
+                                                <li><a href="https://infiniteuny.id">Tim TI INFINITE</a></li>
                                                 <li><a href="">Google Developer Experts</a></li>
                                                 <li><a href="">Google Developer Groups</a></li>
                                             </ul>
@@ -161,6 +380,82 @@
                         </div>
                     </div>
         </div>
-    </footer>    
+    </footer>   
+    
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.tech-item').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrows: true
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function (event) {
+                var scroll = $(window).scrollTop();
+                var nav = $('.nav-dscuny');
+                if (scroll > 150) {
+                    nav.removeClass('bg-trx');
+                    nav.addClass('bg-white');
+                } else {
+                    nav.removeClass('bg-white');
+                    nav.addClass('bg-trx');                
+                }
+            });
+
+            $('body').scrollspy({target: ".nav-dscuny", offset: 50});   
+
+            $("#navbarNav a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
+            $('.btn-dscuny').on('click', function (e){
+                if (this.hash !== "") {
+                    e.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
+            $('.slide-class').slick({
+                arrows: false,
+                autoplay: true,
+                centerMode: true,
+                infinite: true,
+                slidesToShow: 1,
+                dots: true,
+            });
+            
+            $('#leftArrow').click(function(){
+                $('.slide-class').slick('slickPrev');
+            })
+
+            $('#rightArrow').click(function(){
+                $('.slide-class').slick('slickNext');
+            })
+
+            $('.sendemail').click(function(){
+                window.open("https://mail.google.com/mail/u/0/?view=cm&fs=1&to=dsc.ysu@gmail.com&su=DSC+UNY+:+FAQ&cc&bcc&body=Add+Your+Question+Here&tf=1");      
+            })
+        });
+    </script>
+
+    
 </body>
 </html>

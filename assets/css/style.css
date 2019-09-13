@@ -1,0 +1,131 @@
+    /* Using Google Font */
+@import url('https://fonts.googleapis.com/css?family=Product%20Sans');
+
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #FBBC12;
+	border-radius: 10px;
+}
+
+body {
+	font-family: 'Product Sans' !important;
+	background: url('../img/bg.svg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.bg-trx {
+	background-color: transparent !important;
+}
+
+.bg-white {
+	box-shadow: 0 0 15px rgba(99, 114, 130, 0.3) !important;
+}
+
+.nav-dscuny {
+	padding: 15px;
+}
+
+.navbar-brand {
+    margin-left: 15%;
+}
+
+#navbarNav {
+	font-size: 20px;
+	font-weight: bolder;
+	margin-left: 6rem !important;
+}
+
+.nav-link {
+	color: #323232 !important;
+}
+
+.introduce-dscuny {
+	background-color: transparent;
+	padding: 4rem 3rem !important;
+}
+
+.dsc-img-wrapper img {
+	width: 100px;
+}
+
+.dsc-introduce-text {
+	padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.nest-introduce {
+	display: flex;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.student-club {
+	font-size: 25px;
+}
+
+.btn-dscuny {
+	color: #1D9D74;
+    background-color: transparent;
+	border-color: transparent;
+	margin-left: -1.2rem;
+}
+
+.header-color {
+	height: 40px;
+}
+
+.header-color.green {
+	background-color: #189E59;
+}
+
+.header-color.yellow {
+	background-color: #FBBC12;
+}
+
+.header-color.blue {
+	background-color: #557FC0;
+}
+
+.ui.fluid.card {
+	min-height: 260px !important;
+	box-shadow: 0 0 15px rgba(99, 114, 130, 0.3) !important;
+}
+
+.boxed-card {
+	position: relative;
+    top: -35px;
+}
+
+.title-purpose {
+	margin-top: -20px !important;
+}
+
+.center-box-img {
+    width: 50px;
+}
+
+#event .slick-slide {
+	text-align: center;
+	min-height: 310px;
+}
+
+.btn.join-now {
+	margin-top: 2rem;
+	border-radius: 25px;
+	width: 60%;
+	background-color: #557FC0 !important;
+}
+
+#event h2 {
+    margin-top: 15%;
+} 

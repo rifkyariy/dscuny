@@ -2,15 +2,31 @@
 @import url(//https://fonts.googleapis.com/css?family=Product%20Sans);
 
 body {
-    font-family: 'Product Sans'
+    font-family: 'Product Sans';    
 }
 
+/* Tech Section */
+.tech h1{
+    margin-top: 15%;
+}
+
+.tech-container {
+    padding: 5% 0;
+}
+
+.tech-item {
+    text-align: left !important;
+}
+
+
+/* Team Section */
 .background-section {
     background-image: url("../img/back-gradient.svg");
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-position:center 0px;
-    padding-top: 15%;
+    padding-top: 20%;
+    margin-top: -20%;
 }
 
 .dscteam {
@@ -25,7 +41,11 @@ body {
     z-index: 1;
 }
 
-.dscteam h4 {
+.dscteam h1 {
+    margin-top: 5%;
+}
+
+.dscteam h4, .tech h4 {
     margin: 0;
 }
 
